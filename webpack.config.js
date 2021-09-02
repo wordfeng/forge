@@ -37,26 +37,26 @@ const outputs = [
   // modules they require, such as sha1 or sha256. This is to allow smaller
   // builds when you don't require a default dependency.
   //
-  // Note: If using UMD or similar, add forge.js *last* to properly export
+  // Note: If using var or similar, add forge.js *last* to properly export
   // the top level forge namespace.
   //
   // Example: sha1 + ...
   //{
   //  entry: ['./lib/sha1.js', ..., './lib/forge.js'],
   //  filenameBase: 'forge.custom',
-  //  libraryTarget: 'umd'
+  //  libraryTarget: 'var'
   //}
   // Example: PBKDF2 + sha1, explicitly include sha1 default
   //{
   //  entry: ['./lib/pbkdf2.js', './lib/sha1.js', './lib/forge.js'],
   //  filenameBase: 'forge.pbkdf2-sha1',
-  //  libraryTarget: 'umd'
+  //  libraryTarget: 'va r'
   //}
   // Example: PBKDF2 + sha256, without the sha1 default
   //{
   //  entry: ['./lib/pbkdf2.js', './lib/sha256.js', './lib/forge.js'],
   //  filenameBase: 'forge.pbkdf2-sha256',
-  //  libraryTarget: 'umd'
+  //  libraryTarget: 'var'
   //}
 ];
 
